@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinNectar</title>
+    <link rel="stylesheet" href="../css/routine.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Your Personalized Skincare Routine</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Let us know more about you</h2>
+            <form id="routineForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="skinType">Skin Type:</label>
+                    <select id="skinType" name="skinType" required>
+                        <option value="">Select</option>
+                        <option value="combination">Combination</option>
+                        <option value="dry">Dry</option>
+                        <option value="normal">Normal</option>
+                        <option value="oily">Oily</option>
+                        <option value="sensitive">Sensitive</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="skinConcerns">Primary Skin Concern:</label>
+                    <select id="PskinConcern" name="skinConcern" required>
+                        <option value="">Select</option>
+                        <option value="acne">Acne</option>
+                        <option value="dryness">Dryness</option>
+                        <option value="hyperpigmentation">Hyperpigmentation</option>
+                        <option value="wrinkles">Wrinkles</option>
+                        <option value="darkspots">Dark Spots</option>
+                        <option value="uneven">Uneven Texture</option>
+                        <option value="dullness">Dullness</option>
+                    </select>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="skinConcerns">Secondary Skin Concern:</label>
+                    <select id="SskinConcern" name="skinConcern" required>
+                        <option value="">Select</option>
+                        <option value="acne">Acne</option>
+                        <option value="dryness">Dryness</option>
+                        <option value="hyperpigmentation">Hyperpigmentation</option>
+                        <option value="wrinkles">Wrinkles</option>
+                        <option value="darkspots">Dark Spots</option>
+                        <option value="uneven">Uneven Texture</option>
+                        <option value="dullness">Dullness</option>
+                    </select>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="priceRange">Price Range:</label>
+                    <input type="range" id="priceRange" name="priceRange" min="1" max="100" step="1" value="50" required>
+                    <output for="priceRange" id="priceOutput">$370</output>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; SkinNectar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

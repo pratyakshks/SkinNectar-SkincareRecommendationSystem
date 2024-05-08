@@ -1,0 +1,53 @@
+body, h1, h2, p, button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+.about{
+    width:80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+}
+.about h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(209, 114, 5);
+}
+.col{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.para{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.para img{
+    width: 350px;
+    height: 500px;
+    display: block;
+}
+.para p{
+    font-size: 25px;
+    font-style: italic;
+}
+.photo{
+    width:80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+}

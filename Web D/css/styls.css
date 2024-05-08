@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/bg.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration:none;
+}
+nav p{
+    width: 150px;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-style: italic;
+}
+menu{
+    flex: 1;
+    text-align: right;
+
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Edu VIC WA NT Beginner';
+
+}
+.menu ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: black;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text h1{
+        font-size: 25px;
+    }
+    .menu ul li{
+        display: block;
+        color: white;
+    }
+    .menu{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        background: black;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .menu ul{
+        padding: 30px;
+    }
+    .menu ul li a{
+        color: white;
+    }
+}
+
+.shop{
+    width:80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.shop-col img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.5s
+}
+.layer:hover{
+    background: rgb(245, 229, 201);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+    color: rgb(6, 80, 6);
+    font-weight: 400;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+.shop h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(221, 121, 8);
+}
+
+@media(max-width:700px){
+    .layer h3{
+        font-size: 10px;
+    }
+}
+.shop1{
+    width:80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.shop-col img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.5s
+}
+.layer:hover{
+    background: rgb(245, 229, 201);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+    color: rgb(6, 80, 6);
+    font-weight: 400;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+.shop h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(221, 121, 8);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 18px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(237, 121, 27);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(237, 121, 27);
+}
+
+@media(max-width:700px){
+    .layer h3{
+        font-size: 10px;
+    }
+}
+
+.about{
+    width:80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+}
+.about h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(209, 114, 5);
+}
+.col{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.para{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.para img{
+    width:100%;
+    display: block;
+}
+.para p{
+    font-size: 25px;
+    font-style: italic;
+}
+.photo{
+    width:80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+}
